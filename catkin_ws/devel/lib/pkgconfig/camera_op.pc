@@ -1,0 +1,8 @@
+prefix=/home/jetson/catkin_ws/devel
+
+Name: camera_op
+Description: Description of camera_op
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

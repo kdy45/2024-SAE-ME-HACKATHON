@@ -1,0 +1,8 @@
+prefix=/home/jetson/catkin_ws/install
+
+Name: lidar_op
+Description: Description of lidar_op
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
