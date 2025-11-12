@@ -27,6 +27,7 @@ $ catkin_make
 ## Run
 
 #Enter each command line in a different shell.  
+
 $ roslaunch usb_cam.launch  
 $ rosrun cam_lidar_pub.py  
 $ rosrun controller.py  
