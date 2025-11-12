@@ -17,7 +17,7 @@
 
 ## Installaiton
 
-$ git clone git@github.com:kdy45/2024-SAE-ME-HACKATHON.git
+$ git clone https://github.com/kdy45/2024-SAE-ME-HACKATHON.git
 $ cd ./2024-SAE-ME-HACKATHON
 $ catkin_make
 
