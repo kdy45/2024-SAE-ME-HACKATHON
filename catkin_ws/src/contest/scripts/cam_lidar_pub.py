@@ -148,7 +148,7 @@ class Sensor:
             
             target_x = (left_target_x + right_target_x) / 2.0
             
-        elif len(left_lane_inds) > 1000: # 왼쪽 차선만 보일 때 (차선 폭을 약 300px로 가정)
+        elif len(left_lane_inds) > 1000: # 왼쪽 차선만 보일 때
             left_fit = np.polyfit(nonzeroy[left_lane_inds], nonzerox[left_lane_inds], 2)
             left_target_x = left_fit[0]*lookahead_y**2 + left_fit[1]*lookahead_y + left_fit[2]
             target_x = left_target_x + 150 # 차선 폭의 절반만큼 우측으로 보정
@@ -158,9 +158,9 @@ class Sensor:
             right_target_x = right_fit[0]*lookahead_y**2 + right_fit[1]*lookahead_y + right_fit[2]
             target_x = right_target_x - 150 # 차선 폭의 절반만큼 좌측으로 보정
         else:
-            return 0.0, 0.0 # 차선이 아예 안 보이면 직진 유지 (0, 0 반환)
+            return 0.0, 0.0 # 차선이 아예 안 보이면 직진 유지
 
-        # 로봇 중심좌표(하단 정중앙: x=320, y=480) 기준으로 상대 오차 계산
+        # 로봇 위치(하단 정중앙: x=320, y=480) 기준으로 상대 오차 계산
         target_dx = target_x - 320.0
         target_dy = 480.0 - lookahead_y
         
