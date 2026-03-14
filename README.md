@@ -30,4 +30,4 @@ $ catkin_make
 
 $ roslaunch usb_cam.launch  
 $ rosrun cam_lidar_pub.py  
-$ rosrun controller.py  
+$ rosrun controller_inline.py  
