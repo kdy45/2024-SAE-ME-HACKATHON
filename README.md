@@ -8,14 +8,16 @@
 
 
 ## Main function
-- lane/traffic light recognition
+- lane tracing
+- traffic light recognition
+- traffic signs recognition
 - obstacle avoidance
 - parking
 
 
 
 
-## Installaiton
+## Installaiton & build
 
 $ git clone https://github.com/kdy45/2024-SAE-ME-HACKATHON.git  
 $ cd ./2024-SAE-ME-HACKATHON  
@@ -27,7 +29,6 @@ $ catkin_make
 ## Run
 
 #Enter each command line in a different shell.  
-
 $ roslaunch usb_cam.launch  
 $ rosrun cam_lidar_pub.py  
 $ rosrun controller_inline.py  
